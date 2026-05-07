@@ -7,16 +7,16 @@
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet"/>
   <style>
     :root {
-      --sage: #c4793a;        /* burnt orange */
-      --deep-green: #b5451b;  /* deep terracotta red */
-      --forest: #7a2e0e;      /* rich dark red-brown */
-      --earth: #d4960a;       /* warm golden yellow */
-      --warm-sand: #FFF8E1;   /* light golden yellow */
-      --cream: #fffaf2;       /* soft ivory */
-      --bark: #D4760A;        /* deep mango yellow */
-      --mist: #FFF8E1;        /* light golden yellow */
-      --text: #2e1f0e;        /* deep warm brown text */
-      --text-light: #D4760A;  /* deep mango yellow */
+      --sage: #c4793a;        /* burnt orange - for accents only */
+      --deep-green: #b5451b;  /* deep terracotta red - for headings */
+      --forest: #7a2e0e;      /* rich dark red-brown - for dark sections */
+      --earth: #d4960a;       /* warm golden yellow - for labels */
+      --warm-sand: #FFF8E1;   /* light golden yellow - backgrounds */
+      --cream: #fffaf2;       /* soft ivory - backgrounds */
+      --bark: #D4760A;        /* deep mango yellow - accent only */
+      --mist: #FFF8E1;        /* light golden yellow - backgrounds */
+      --text: #1a1008;        /* very dark brown - MAIN BODY TEXT */
+      --text-light: #3d2b10;  /* dark warm brown - SECONDARY TEXT */
     }
 
     * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -65,6 +65,7 @@
       grid-template-columns: 1fr 1fr;
       position: relative;
       overflow: hidden;
+      background: var(--cream);
     }
     .hero-left {
       display: flex;
@@ -73,6 +74,7 @@
       padding: 8rem 4rem 4rem 6rem;
       position: relative;
       z-index: 2;
+      background: var(--cream);
     }
     .hero-eyebrow {
       font-size: 0.72rem;
