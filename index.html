@@ -7,16 +7,16 @@
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet"/>
   <style>
     :root {
-      --sage: #c8845a;
-      --deep-green: #8b3a2a;
-      --forest: #5c2318;
-      --earth: #c4973a;
-      --warm-sand: #faf0e0;
-      --cream: #fffbf4;
-      --bark: #a0522d;
-      --mist: #f5e6d3;
-      --text: #2e2a22;
-      --text-light: #6b6358;
+      --sage: #c4793a;        /* burnt orange */
+      --deep-green: #b5451b;  /* deep terracotta red */
+      --forest: #7a2e0e;      /* rich dark red-brown */
+      --earth: #d4960a;       /* warm golden yellow */
+      --warm-sand: #FFF8E1;   /* light golden yellow */
+      --cream: #fffaf2;       /* soft ivory */
+      --bark: #D4760A;        /* deep mango yellow */
+      --mist: #FFF8E1;        /* light golden yellow */
+      --text: #2e1f0e;        /* deep warm brown text */
+      --text-light: #D4760A;  /* deep mango yellow */
     }
 
     * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -162,7 +162,7 @@
     .hero-circle {
       width: 300px; height: 300px;
       border-radius: 50%;
-      background: linear-gradient(135deg, var(--sage) 0%, var(--deep-green) 100%);
+      background: linear-gradient(135deg, #d4960a 0%, #b5451b 50%, #7a2e0e 100%);
       display: flex;
       align-items: center;
       justify-content: center;
@@ -466,11 +466,11 @@
       width: 200px; height: 200px;
       border-radius: 50%;
       background: conic-gradient(
-        var(--forest) 0deg, var(--deep-green) 45deg,
-        var(--sage) 90deg, var(--deep-green) 135deg,
-        var(--forest) 180deg, var(--bark) 225deg,
-        var(--earth) 270deg, var(--bark) 315deg,
-        var(--forest) 360deg
+        #7a2e0e 0deg, #b5451b 45deg,
+        #c4793a 90deg, #d4960a 135deg,
+        #b5451b 180deg, #a0522d 225deg,
+        #c4793a 270deg, #7a2e0e 315deg,
+        #b5451b 360deg
       );
       display: flex; align-items: center; justify-content: center;
       box-shadow: 0 10px 40px rgba(0,0,0,0.15);
@@ -628,6 +628,16 @@
         gap: 1.5rem !important;
       }
 
+      /* INLINE PADDING FIX */
+      section[style*="padding: 6rem"] {
+        padding: 3rem 1.5rem !important;
+      }
+
+      /* INLINE FONT SIZE FIX */
+      p[style*="font-size:1.05rem"] {
+        font-size: 0.95rem !important;
+      }
+
       /* STAT CARDS */
       .stat-number { font-size: 2rem; }
     }
@@ -657,6 +667,7 @@
     <li><a href="#music">Music</a></li>
     <li><a href="#family">Family</a></li>
     <li><a href="#friends">Friends</a></li>
+    <li><a href="#work">Work</a></li>
     <li><a href="#learning">Learning</a></li>
     <li><a href="#connect">Connect</a></li>
   </ul>
@@ -668,7 +679,7 @@
     <p class="hero-eyebrow">Welcome to my corner of the world</p>
     <h1 class="hero-name">Deepika<br>Thapar Singh<br><em>— Dee</em></h1>
     <p class="hero-tagline">
-      Educator. Explorer. People's person. My heart lives between the golden streets of Dubai and the misty mountains of India — and everywhere books, music, and good people take me.
+      Hi, I'm Dee. A woman of substance — or at least that's what I call myself! I believe deeply in the universe, in gratitude, and in the power of manifesting the life you want. Everything around me has been manifested with love and intention. Welcome to my little corner of the world.
     </p>
     <div class="hero-cta">
       <a href="#about" class="btn btn-primary">Discover My World</a>
@@ -697,84 +708,95 @@
 <!-- ABOUT -->
 <section id="about">
   <div class="about-text">
-    <p class="section-label">My Story</p>
-    <h2 class="section-title">A People's Person at Heart</h2>
+    <p class="section-label">Who Am I?</p>
+    <h2 class="section-title">Just Another Person in This World</h2>
     <div class="divider"></div>
     <p>
-      I'm <strong>Dee</strong> — a school principal based in the vibrant city of Dubai, deeply rooted in the world of K–12 CBSE education. With over <strong>36 years</strong> in this field, education isn't just my profession — it's my calling.
+      I want you to know me for who I am. I'm not somebody special. I'm just another person in this world who has worked very hard all her life and will continue to work hard with every breath that I have. I call myself a <strong>woman of substance</strong>. I'm a great believer in the universe. Everything around me has been manifested. And gratitude? That's something I practice every single day.
     </p>
     <p>
-      What truly lights me up is <strong>people</strong>. I am, at my core, someone who thrives on human connection — meeting new faces, hearing stories, and building communities. I believe every person carries a universe worth exploring.
+      I've been in education for <strong>37 years</strong>. But the learning has never stopped — not for a single day. And if there's one thing these 37 years have taught me, it's this: <strong>all that children really need is love.</strong> Just love them for who they are. Tell them — you can do it. And if you can't do maths, that's okay. Maybe you can sing. Maybe you can dance. Find what you're good at and build your life around that. Every child deserves to hear that there is a place for them under this sun.
     </p>
     <p>
-      I am deeply <strong>family-oriented</strong> — my husband <strong>Bikram</strong> and I have built a life full of love, laughter and adventure. We are proud parents of two wonderful sons, <strong>Anant</strong> and <strong>Kabeer</strong>. Anant's wife <strong>Deirdra</strong> is, quite simply, the daughter we never had — and our family feels beautifully complete with her in it. Our home is also lovingly ruled by our three dogs! 🐾
+      And to every parent out there — parenting is the hardest job in the world. None of us truly know if we got it right until our last breath. I always say I wish there was a <strong>school of parenting</strong> we could have attended before we had children! But if we keep the communication channels open and give our children happy homes — not fancy homes, happy homes — everything finds its way.
+    </p>
+    <p>
+      This ability to give my best, to work hard, to be kind and honest — I didn't come up with this myself. I <strong>inherited it</strong>. From my dad, my mum, my grandparents. My grandparents from both sides crossed over from Pakistan to India during the Partition. I grew up hearing how tough it was to start life all over again. But their value systems? Unshakeable. Honesty. Hard work. Kindness. That's what I carry with me. That's what I hope to pass on.
+    </p>
+    <p>
+      My husband <strong>Bikram</strong> is one of the most sensitive, caring people I know. He has always taught us not to waste food, to give back to the community, to live sustainably and protect the environment. These are not just words in our home. We try to live them every day.
     </p>
   </div>
-    <div class="about-stats">
-      <div class="stat-card">
-        <div class="stat-number">36</div>
-        <div class="stat-label">Years in Education</div>
-      </div>
-      <div class="stat-card">
-        <div class="stat-number">4</div>
-        <div class="stat-label">Beloved Family — Bikram, Anant, Kabeer & Deirdra</div>
-      </div>
-      <div class="stat-card">
-        <div class="stat-number">3</div>
-        <div class="stat-label">Dogs — My Fur Babies 🐾</div>
-      </div>
-      <div class="stat-card">
-        <div class="stat-number">🌏</div>
-        <div class="stat-label">Based in Dubai, UAE</div>
-      </div>
+  <div class="about-stats">
+    <div class="stat-card">
+      <div class="stat-number">37</div>
+      <div class="stat-label">Years in Education</div>
     </div>
+    <div class="stat-card">
+      <div class="stat-number">10</div>
+      <div class="stat-label">Years at Credence High School</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-number">3</div>
+      <div class="stat-label">Dogs — My Fur Babies 🐾</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-number">🌏</div>
+      <div class="stat-label">Home — Dubai, UAE</div>
+    </div>
+  </div>
 </section>
 
 <!-- INTERESTS -->
 <section id="interests">
   <p class="section-label">What Makes Me, Me</p>
-  <h2 class="section-title">My World of Interests</h2>
+  <h2 class="section-title">The Things I Love</h2>
   <div class="divider"></div>
   <div class="interests-grid">
     <div class="interest-card">
       <div class="interest-icon">🏔️</div>
-      <h3 class="interest-title">Mountains & Nature</h3>
-      <p class="interest-desc">There is something about the mountains that stills the mind and expands the soul. Heights remind me that perspective is everything.</p>
+      <h3 class="interest-title">The Mountains</h3>
+      <p class="interest-desc">My heart lives in the mountains of India. Dubai is my home and I absolutely love this city — but the mountains? That's where my soul breathes. There's something about being up there that just puts everything right.</p>
     </div>
     <div class="interest-card">
       <div class="interest-icon">📚</div>
-      <h3 class="interest-title">Books & Literature</h3>
-      <p class="interest-desc">I'm drawn especially to voices from South and Southeast Asia — writers who write from lived experience, whose words feel like home.</p>
+      <h3 class="interest-title">Books</h3>
+      <p class="interest-desc">I'm drawn to writers from South and Southeast Asia — there's a personal connect there that I can't quite explain. Anita Desai, Jhumpa Lahiri, Chitra Banerjee Divakaruni — these are the voices that speak to me.</p>
     </div>
     <div class="interest-card">
       <div class="interest-icon">🎵</div>
       <h3 class="interest-title">Music</h3>
-      <p class="interest-desc">Music is the language my heart speaks fluently. It has accompanied me through every chapter of my life, in joy and in stillness.</p>
+      <p class="interest-desc">Dire Straits holds a very special place in my heart. The 80s and 90s — now that was music! Real music, with soul and meaning. I also love Hindustani classical, ghazals, Bollywood and Sufi. Music has been my companion through every chapter of life.</p>
     </div>
     <div class="interest-card">
-      <div class="interest-icon">✈️</div>
-      <h3 class="interest-title">Travel & Discovery</h3>
-      <p class="interest-desc">Every journey is a new classroom. I travel not just to see places, but to understand people, cultures, and the beautiful diversity of our world.</p>
+      <div class="interest-icon">🎨</div>
+      <h3 class="interest-title">Art & Indian Heritage</h3>
+      <p class="interest-desc">I have a deep love for Indian art. Jamini Roy moves me deeply. I've recently been collecting paintings by the wonderful Meena Laishram. I love Indian handloom, textiles, artifacts and crafts — I am deeply proud of my heritage and my roots.</p>
     </div>
     <div class="interest-card">
-      <div class="interest-icon">🤖</div>
-      <h3 class="interest-title">AI & Technology</h3>
-      <p class="interest-desc">The future of education is being rewritten. I'm excited to explore how AI and technology can transform learning — for every child, everywhere.</p>
+      <div class="interest-icon">🌿</div>
+      <h3 class="interest-title">Gardening — Sort Of!</h3>
+      <p class="interest-desc">I love greenery. I love a beautiful garden. I love sitting in it, enjoying it, telling my gardener exactly what to do — and then sitting back and watching it all come together! I'm not going to pretend I work with my hands in the garden. But I make sure it's done right! 😄</p>
     </div>
     <div class="interest-card">
       <div class="interest-icon">🍜</div>
-      <h3 class="interest-title">Food & Flavours</h3>
-      <p class="interest-desc">A true lover of bold, aromatic flavours — Thai cuisine with its perfect balance of sweet, spicy and tangy; the depth of Chinese cooking; and the comfort of a beautifully made South Indian meal. Food, for me, is culture on a plate.</p>
+      <h3 class="interest-title">Food</h3>
+      <p class="interest-desc">Thai cuisine is my absolute favourite — that balance of sweet, spicy and tangy just does something for me. I love Chinese, South Indian food, and I'm very fond of my sourdough bread. And of course — nothing beats good Indian home food.</p>
     </div>
     <div class="interest-card">
       <div class="interest-icon">🐾</div>
-      <h3 class="interest-title">Animal Lover & Dog Mum</h3>
-      <p class="interest-desc">My heart has always had a special place for animals. At home, life is never quiet — I am the proud and devoted mum of three dogs who bring boundless joy, unconditional love, and the best kind of chaos into every single day.</p>
+      <h3 class="interest-title">My Three Dogs</h3>
+      <p class="interest-desc">I am an animal lover through and through. My three dogs are not pets — they are family. They bring the most unconditional love, the best kind of chaos, and more joy than I can put into words.</p>
     </div>
     <div class="interest-card">
-      <div class="interest-icon">🌱</div>
-      <h3 class="interest-title">Leadership & Growth</h3>
-      <p class="interest-desc">What excites me most is turning around institutions — nurturing cultures of growth, resilience, and possibility from the inside out.</p>
+      <div class="interest-icon">🎨</div>
+      <h3 class="interest-title">Colour & Beauty</h3>
+      <p class="interest-desc">I am drawn to warm, earthy, vibrant colours — yellow, orange, sea blue, reds and earthy greens. Colour, for me, is energy. It's life. I surround myself with it wherever I go.</p>
+    </div>
+    <div class="interest-card">
+      <div class="interest-icon">🤖</div>
+      <h3 class="interest-title">AI & Learning</h3>
+      <p class="interest-desc">I've recently discovered AI — and especially Claude! The joy of learning something new at this stage of life is just wonderful. Harvard courses on leadership, making Instagram carousels, building this very website — the learning never stops and I hope it never does.</p>
     </div>
   </div>
 </section>
@@ -1066,6 +1088,52 @@
   <div style="margin-top:3rem; background:rgba(255,255,255,0.07); border:1px solid rgba(255,255,255,0.12); border-radius:4px; padding:2.5rem; text-align:center;">
     <p style="font-family:'Cormorant Garamond',serif; font-size:1.6rem; font-style:italic; font-weight:300; color:white; line-height:1.5; max-width:700px; margin:0 auto;">
       "The more I learn, the more I realise how much more there is to discover. And that thought — rather than daunting me — absolutely delights me."
+    </p>
+    <p style="margin-top:0.8rem; font-size:0.72rem; letter-spacing:0.2em; text-transform:uppercase; color:var(--sage);">— Dee</p>
+  </div>
+</section>
+
+<!-- WORK -->
+<section id="work" style="background: var(--mist); padding: 6rem;">
+  <p class="section-label">My Work</p>
+  <h2 class="section-title">Credence High School — It's Not Work. It's Love.</h2>
+  <div class="divider"></div>
+  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start;">
+    <div>
+      <p style="font-size:1.05rem; font-weight:300; line-height:1.9; color:var(--text-light); margin-bottom:1.2rem;">
+        I have been at <strong>Credence High School, Dubai</strong> for 10 years now. And I want to be very honest — it doesn't feel like work. It never has. This school is very, very special to me. The people, the children, the energy — it gives me great joy every single day.
+      </p>
+      <p style="font-size:1.05rem; font-weight:300; line-height:1.9; color:var(--text-light); margin-bottom:1.2rem;">
+        My title is <strong>CEO — Principal</strong>. But honestly? That title is just an <em>invisible crown</em>. It means nothing to me in this beautiful human journey. What matters is the relationship I have with every child, every teacher, every parent who walks through those doors.
+      </p>
+      <p style="font-size:1.05rem; font-weight:300; line-height:1.9; color:var(--text-light); margin-bottom:1.2rem;">
+        And it's not just Credence. Every school I have ever worked in has left a lasting mark on my life. Because a school is not a building. It's the people. The children I always call <em>my children</em>. I'm still connected with so many of them — and it gives me the greatest pleasure to see them all blooming. That's why I do what I do.
+      </p>
+      <p style="font-size:1.05rem; font-weight:300; line-height:1.9; color:var(--text-light);">
+        To every colleague — past and present — thank you. Each one of you has taught me something. I carry every one of you with me. 🙏
+      </p>
+    </div>
+    <div style="display:flex; flex-direction:column; gap:1.2rem;">
+      <div style="background:white; padding:1.8rem; border-radius:4px; border-left:3px solid var(--sage);">
+        <div style="font-size:1.8rem; margin-bottom:0.5rem;">🏫</div>
+        <p style="font-family:'Cormorant Garamond',serif; font-size:1.1rem; color:var(--forest); font-weight:400;">Credence High School, Dubai</p>
+        <p style="font-size:0.85rem; color:var(--text-light); margin-top:0.3rem; line-height:1.7;">10 years and counting. Not a workplace — a home away from home.</p>
+      </div>
+      <div style="background:white; padding:1.8rem; border-radius:4px; border-left:3px solid var(--earth);">
+        <div style="font-size:1.8rem; margin-bottom:0.5rem;">👑</div>
+        <p style="font-family:'Cormorant Garamond',serif; font-size:1.1rem; color:var(--forest); font-weight:400;">An Invisible Crown</p>
+        <p style="font-size:0.85rem; color:var(--text-light); margin-top:0.3rem; line-height:1.7;">CEO — Principal is just a title. The real work happens in the heart.</p>
+      </div>
+      <div style="background:white; padding:1.8rem; border-radius:4px; border-left:3px solid var(--sage);">
+        <div style="font-size:1.8rem; margin-bottom:0.5rem;">❤️</div>
+        <p style="font-family:'Cormorant Garamond',serif; font-size:1.1rem; color:var(--forest); font-weight:400;">My Children</p>
+        <p style="font-size:0.85rem; color:var(--text-light); margin-top:0.3rem; line-height:1.7;">Every student I have ever taught — I call them mine. Watching them bloom is my greatest reward.</p>
+      </div>
+    </div>
+  </div>
+  <div style="margin-top:3rem; background:var(--deep-green); border-radius:4px; padding:2.5rem; text-align:center;">
+    <p style="font-family:'Cormorant Garamond',serif; font-size:1.5rem; font-style:italic; font-weight:300; color:white; line-height:1.6; max-width:700px; margin:0 auto;">
+      "If you can't do maths, that's okay. Maybe you can sing. Maybe you can dance. Find what you're good at — and build your life around that. There is a place for every child under this sun."
     </p>
     <p style="margin-top:0.8rem; font-size:0.72rem; letter-spacing:0.2em; text-transform:uppercase; color:var(--sage);">— Dee</p>
   </div>
